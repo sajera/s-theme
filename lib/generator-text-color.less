@@ -1,0 +1,28 @@
+/*-------------------------------------------------
+    s-theme generator text color
+---------------------------------------------------*/
+
+// @value-list: ...
+// @name-list: ...
+.generator-text-color(@index: 1) when ( @index =< length(@name-list) ) {
+    // get item name
+    @name: extract(@name-list, @index);
+    // get item color
+    @color: extract(@value-list, @index);
+
+    .@{name} {
+        &-text {
+            &, &-hover:hover, &-active:active, &-active.active, &-disable.disable {
+                color: @color;
+            }
+            &-i, &-hover-i:hover, &-active-i:active, &-active-i.active, &-disable-i.disable {
+                color: @color !important;
+            }
+        }
+    }
+
+    // next iteration
+    .generator-text-color(@index + 1);
+}
+.generator-text-color();
+

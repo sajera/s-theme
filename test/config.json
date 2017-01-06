@@ -1,0 +1,20 @@
+{
+    "red": "#ff4136",
+    "orange": "#FF851B",
+    "yellow": "#FFDC00",
+    "fuchsia": "#F012BE",
+    "purple": "#B10DC9",
+    "blue": "#0074D9",
+    "aqua": "#7FDBFF",
+    "green": "#2ECC40",
+    "lime": "#01FF70",
+    "olive": "#3D9970",
+    "navy": "#001F3F",
+    "black": "#111111",
+    "grey": "#AAAAAA",
+    "silver": "#DDDDDD",
+    "white": "#FFFFFF",
+    "custom": {
+        "test": 1
+    }
+}

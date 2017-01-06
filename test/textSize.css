@@ -1,0 +1,87 @@
+/*-------------------------------------------------
+    s-theme generator text size
+---------------------------------------------------*/
+*[class^=brand-text] {
+  font-size: 36px;
+  line-height: 39.6px;
+}
+*[class^=brand-text].text-low {
+  font-size: 25.2px;
+  line-height: 28.8px;
+}
+*[class^=brand-text].text-huge {
+  font-size: 46.8px;
+  line-height: 50.4px;
+}
+*[class^=brand-text].text-x2 {
+  font-size: 72px;
+  line-height: 79.2px;
+}
+*[class^=brand-text].text-x3 {
+  font-size: 108px;
+  line-height: 115.2px;
+}
+*[class^=brand-text].text-x4 {
+  font-size: 144px;
+  line-height: 151.2px;
+}
+*[class^=brand-text].text-x5 {
+  font-size: 180px;
+  line-height: 187.2px;
+}
+*[class^=common-text] {
+  font-size: 1em;
+  line-height: 1.1em;
+}
+*[class^=common-text].text-low {
+  font-size: 0.7em;
+  line-height: 0.8em;
+}
+*[class^=common-text].text-huge {
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+*[class^=common-text].text-x2 {
+  font-size: 2em;
+  line-height: 2.2em;
+}
+*[class^=common-text].text-x3 {
+  font-size: 3em;
+  line-height: 3.2em;
+}
+*[class^=common-text].text-x4 {
+  font-size: 4em;
+  line-height: 4.2em;
+}
+*[class^=common-text].text-x5 {
+  font-size: 5em;
+  line-height: 5.2em;
+}
+*[class^=highlight-text] {
+  font-size: 110%;
+  line-height: 121%;
+}
+*[class^=highlight-text].text-low {
+  font-size: 77%;
+  line-height: 88%;
+}
+*[class^=highlight-text].text-huge {
+  font-size: 143%;
+  line-height: 154%;
+}
+*[class^=highlight-text].text-x2 {
+  font-size: 220%;
+  line-height: 242%;
+}
+*[class^=highlight-text].text-x3 {
+  font-size: 330%;
+  line-height: 352%;
+}
+*[class^=highlight-text].text-x4 {
+  font-size: 440%;
+  line-height: 462%;
+}
+*[class^=highlight-text].text-x5 {
+  font-size: 550%;
+  line-height: 572%;
+}

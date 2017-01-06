@@ -1,0 +1,45 @@
+/*-------------------------------------------------
+    s-theme generator text color
+---------------------------------------------------*/
+.brand-text,
+.brand-text-hover:hover,
+.brand-text-active:active,
+.brand-text-active.active,
+.brand-text-disable.disable {
+  color: #FF4136;
+}
+.brand-text-i,
+.brand-text-hover-i:hover,
+.brand-text-active-i:active,
+.brand-text-active-i.active,
+.brand-text-disable-i.disable {
+  color: #FF4136 !important;
+}
+.common-text,
+.common-text-hover:hover,
+.common-text-active:active,
+.common-text-active.active,
+.common-text-disable.disable {
+  color: #2ECC40;
+}
+.common-text-i,
+.common-text-hover-i:hover,
+.common-text-active-i:active,
+.common-text-active-i.active,
+.common-text-disable-i.disable {
+  color: #2ECC40 !important;
+}
+.highlight-text,
+.highlight-text-hover:hover,
+.highlight-text-active:active,
+.highlight-text-active.active,
+.highlight-text-disable.disable {
+  color: #0074D9;
+}
+.highlight-text-i,
+.highlight-text-hover-i:hover,
+.highlight-text-active-i:active,
+.highlight-text-active-i.active,
+.highlight-text-disable-i.disable {
+  color: #0074D9 !important;
+}

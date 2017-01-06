@@ -1,0 +1,45 @@
+/*-------------------------------------------------
+    s-theme generator background
+---------------------------------------------------*/
+.brand-bg,
+.brand-bg-hover:hover,
+.brand-bg-active:active,
+.brand-bg-active.active,
+.brand-bg-disable.disable {
+  background-color: #FF4136;
+}
+.brand-bg-i,
+.brand-bg-hover-i:hover,
+.brand-bg-active-i:active,
+.brand-bg-active-i.active,
+.brand-bg-disable-i.disable {
+  background-color: #FF4136 !important;
+}
+.common-bg,
+.common-bg-hover:hover,
+.common-bg-active:active,
+.common-bg-active.active,
+.common-bg-disable.disable {
+  background-color: #2ECC40;
+}
+.common-bg-i,
+.common-bg-hover-i:hover,
+.common-bg-active-i:active,
+.common-bg-active-i.active,
+.common-bg-disable-i.disable {
+  background-color: #2ECC40 !important;
+}
+.highlight-bg,
+.highlight-bg-hover:hover,
+.highlight-bg-active:active,
+.highlight-bg-active.active,
+.highlight-bg-disable.disable {
+  background-color: #0074D9;
+}
+.highlight-bg-i,
+.highlight-bg-hover-i:hover,
+.highlight-bg-active-i:active,
+.highlight-bg-active-i.active,
+.highlight-bg-disable-i.disable {
+  background-color: #0074D9 !important;
+}

@@ -1,0 +1,27 @@
+/*-------------------------------------------------
+    s-theme generator background
+---------------------------------------------------*/
+
+// @value-list: ...
+// @name-list: ...
+.generator-bg(@index: 1) when ( @index =< length(@name-list) ) {
+    // get item name
+    @name: extract(@name-list, @index);
+    // get item color
+    @color: extract(@value-list, @index);
+
+    .@{name} {
+        &-bg {
+            &, &-hover:hover, &-active:active, &-active.active, &-disable.disable {
+                background-color: @color;
+            }
+            &-i, &-hover-i:hover, &-active-i:active, &-active-i.active, &-disable-i.disable {
+                background-color: @color !important;
+            }
+        }
+    }
+
+    // next iteration
+    .generator-bg(@index + 1);
+}
+.generator-bg();
