@@ -9,6 +9,35 @@ if ( is.platform.browser() ) {
     window.theme = theme;
     window.Source = require('../lib/Source.js');
 }
+
+theme
+    .full({ // invalid fields - ignore
+        'brand': {
+            'background': '#FF4136',
+            'color': '#2ECC40',
+            'size': '36px',
+        },
+        'common': {
+            'background': '#2ECC40',
+            'color': '#FF4136',
+            'size': '24px',
+        },
+        'highlight': {
+            'background': null, // or any invalid data
+            'color': '#0074D9',
+            'size': '40px',
+        },
+    }, {compress: false})
+    .then(function ( sourceString ) {
+        fs.writeFileSync( './test/fullTheme.css', sourceString);
+    });
+
+
+
+
+
+
+
 // generate extended css file from color config for backgrounds
 theme
     .bgColors({'brand': '#FF4136', 'common': '#2ECC40', 'highlight': '#0074D9'}, {compress: false})

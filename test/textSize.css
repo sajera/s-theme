@@ -15,19 +15,19 @@
 }
 *[class^=brand-text].text-x2 {
   font-size: 72px;
-  line-height: 79.2px;
+  line-height: 75.6px;
 }
 *[class^=brand-text].text-x3 {
   font-size: 108px;
-  line-height: 115.2px;
+  line-height: 111.6px;
 }
 *[class^=brand-text].text-x4 {
   font-size: 144px;
-  line-height: 151.2px;
+  line-height: 147.6px;
 }
 *[class^=brand-text].text-x5 {
   font-size: 180px;
-  line-height: 187.2px;
+  line-height: 183.6px;
 }
 *[class^=common-text] {
   font-size: 1em;
@@ -43,19 +43,19 @@
 }
 *[class^=common-text].text-x2 {
   font-size: 2em;
-  line-height: 2.2em;
+  line-height: 2.1em;
 }
 *[class^=common-text].text-x3 {
   font-size: 3em;
-  line-height: 3.2em;
+  line-height: 3.1em;
 }
 *[class^=common-text].text-x4 {
   font-size: 4em;
-  line-height: 4.2em;
+  line-height: 4.1em;
 }
 *[class^=common-text].text-x5 {
   font-size: 5em;
-  line-height: 5.2em;
+  line-height: 5.1em;
 }
 *[class^=highlight-text] {
   font-size: 110%;
@@ -71,17 +71,17 @@
 }
 *[class^=highlight-text].text-x2 {
   font-size: 220%;
-  line-height: 242%;
+  line-height: 231%;
 }
 *[class^=highlight-text].text-x3 {
   font-size: 330%;
-  line-height: 352%;
+  line-height: 341%;
 }
 *[class^=highlight-text].text-x4 {
   font-size: 440%;
-  line-height: 462%;
+  line-height: 451%;
 }
 *[class^=highlight-text].text-x5 {
   font-size: 550%;
-  line-height: 572%;
+  line-height: 561%;
 }

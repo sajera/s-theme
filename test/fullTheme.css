@@ -1,0 +1,163 @@
+/*-------------------------------------------------
+    s-theme generator background
+---------------------------------------------------*/
+.brand-bg,
+.brand-bg-hover:hover,
+.brand-bg-active:active,
+.brand-bg-active.active,
+.brand-bg-disable.disable {
+  background-color: #FF4136;
+}
+.brand-bg-i,
+.brand-bg-hover-i:hover,
+.brand-bg-active-i:active,
+.brand-bg-active-i.active,
+.brand-bg-disable-i.disable {
+  background-color: #FF4136 !important;
+}
+.common-bg,
+.common-bg-hover:hover,
+.common-bg-active:active,
+.common-bg-active.active,
+.common-bg-disable.disable {
+  background-color: #2ECC40;
+}
+.common-bg-i,
+.common-bg-hover-i:hover,
+.common-bg-active-i:active,
+.common-bg-active-i.active,
+.common-bg-disable-i.disable {
+  background-color: #2ECC40 !important;
+}
+/*-------------------------------------------------
+    s-theme generator text color
+---------------------------------------------------*/
+.brand-text,
+.brand-text-hover:hover,
+.brand-text-active:active,
+.brand-text-active.active,
+.brand-text-disable.disable {
+  color: #2ECC40;
+}
+.brand-text-i,
+.brand-text-hover-i:hover,
+.brand-text-active-i:active,
+.brand-text-active-i.active,
+.brand-text-disable-i.disable {
+  color: #2ECC40 !important;
+}
+.common-text,
+.common-text-hover:hover,
+.common-text-active:active,
+.common-text-active.active,
+.common-text-disable.disable {
+  color: #FF4136;
+}
+.common-text-i,
+.common-text-hover-i:hover,
+.common-text-active-i:active,
+.common-text-active-i.active,
+.common-text-disable-i.disable {
+  color: #FF4136 !important;
+}
+.highlight-text,
+.highlight-text-hover:hover,
+.highlight-text-active:active,
+.highlight-text-active.active,
+.highlight-text-disable.disable {
+  color: #0074D9;
+}
+.highlight-text-i,
+.highlight-text-hover-i:hover,
+.highlight-text-active-i:active,
+.highlight-text-active-i.active,
+.highlight-text-disable-i.disable {
+  color: #0074D9 !important;
+}
+/*-------------------------------------------------
+    s-theme generator text size
+---------------------------------------------------*/
+*[class^=brand-text] {
+  font-size: 36px;
+  line-height: 39.6px;
+}
+*[class^=brand-text].text-low {
+  font-size: 25.2px;
+  line-height: 28.8px;
+}
+*[class^=brand-text].text-huge {
+  font-size: 46.8px;
+  line-height: 50.4px;
+}
+*[class^=brand-text].text-x2 {
+  font-size: 72px;
+  line-height: 75.6px;
+}
+*[class^=brand-text].text-x3 {
+  font-size: 108px;
+  line-height: 111.6px;
+}
+*[class^=brand-text].text-x4 {
+  font-size: 144px;
+  line-height: 147.6px;
+}
+*[class^=brand-text].text-x5 {
+  font-size: 180px;
+  line-height: 183.6px;
+}
+*[class^=common-text] {
+  font-size: 24px;
+  line-height: 26.4px;
+}
+*[class^=common-text].text-low {
+  font-size: 16.8px;
+  line-height: 19.2px;
+}
+*[class^=common-text].text-huge {
+  font-size: 31.2px;
+  line-height: 33.6px;
+}
+*[class^=common-text].text-x2 {
+  font-size: 48px;
+  line-height: 50.4px;
+}
+*[class^=common-text].text-x3 {
+  font-size: 72px;
+  line-height: 74.4px;
+}
+*[class^=common-text].text-x4 {
+  font-size: 96px;
+  line-height: 98.4px;
+}
+*[class^=common-text].text-x5 {
+  font-size: 120px;
+  line-height: 122.4px;
+}
+*[class^=highlight-text] {
+  font-size: 40px;
+  line-height: 44px;
+}
+*[class^=highlight-text].text-low {
+  font-size: 28px;
+  line-height: 32px;
+}
+*[class^=highlight-text].text-huge {
+  font-size: 52px;
+  line-height: 56px;
+}
+*[class^=highlight-text].text-x2 {
+  font-size: 80px;
+  line-height: 84px;
+}
+*[class^=highlight-text].text-x3 {
+  font-size: 120px;
+  line-height: 124px;
+}
+*[class^=highlight-text].text-x4 {
+  font-size: 160px;
+  line-height: 164px;
+}
+*[class^=highlight-text].text-x5 {
+  font-size: 200px;
+  line-height: 204px;
+}
