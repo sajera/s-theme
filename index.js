@@ -23,20 +23,52 @@ function isUnit ( data ) {
  * @public
  */
 var theme = module.exports = {
+    /**
+     * create custom css string with all possibilities of theme
+     * @example
+        require('s-theme')
+            .full({ // invalid fields - ignore
+                'brand': {
+                    'background': '#FF4136',
+                    'color': '#2ECC40',
+                    'size': '36px',
+                },
+                'common': {
+                    'background': '#2ECC40',
+                    'color': '#FF4136',
+                    'size': '24px',
+                },
+                'highlight': {
+                    'background': null, // or any invalid data
+                    'color': '#0074D9',
+                    'size': '40px',
+                },
+            }, {compress: false})
+            .then(function ( sourceString ) {
+                fs.writeFileSync( './test/fullTheme.css', sourceString);
+            });
+     * @param { Object } config - data to generate themes
+     * @param { Object } [options] - "less" render options
+     * @returns { Promise }
+     * @function
+     * @public
+     */
     full: function ( config, options ) {
         if ( !is._object(config) ) { throw new Error('Configuration of "full" required and must be an object'); }
         return new Promise(function ( resolve, reject ) {
-            var item;
-            var all = [];
-            var bgs = {};
-            var texts = {};
-            var sizes = {};
+            var item,
+                all = [],
+                bgs = {},
+                texts = {},
+                sizes = {};
 
             for ( var name in config ) {
                 item = config[name];
-                (isHex(item['background'])||isRgb(item['background']))&&(bgs[name]=item['background']);
-                (isHex(item['color'])||isRgb(item['color']))&&(texts[name]=item['color']);
-                isUnit(item['size'])&&(sizes[name+'-text']=item['size']);
+                if (is._object(item)) {
+                    (isHex(item['background'])||isRgb(item['background']))&&(bgs[name]=item['background']);
+                    (isHex(item['color'])||isRgb(item['color']))&&(texts[name]=item['color']);
+                    isUnit(item['size'])&&(sizes[name+'-text']=item['size']);
+                }
             }
 
             if ( !is.empty(bgs) ) all.push( theme.bgColors(bgs, options) );
@@ -46,7 +78,6 @@ var theme = module.exports = {
             Promise.all(all).then(function ( res ) {
                 resolve(res.join(''));
             }, reject);
-            
         });
     },
     /**
@@ -71,10 +102,10 @@ var theme = module.exports = {
                 var names = '@name-list:';
                 var colors = '@value-list:';
                 for ( var name in config ) {
-                    if ( isHex(config[name])||isRgb(config[name]) ) {
+                    // if ( isHex(config[name])||isRgb(config[name]) ) {
                         names += name + ',';
                         colors += config[name] + ',';
-                    }
+                    // }
                 }
                 this.variables = names.replace(/\,$/,';')+colors.replace(/\,$/,';');
             }
@@ -103,10 +134,10 @@ var theme = module.exports = {
                 var names = '@name-list:';
                 var colors = '@value-list:';
                 for ( var name in config ) {
-                    if ( isHex(config[name])||isRgb(config[name]) ) {
+                    // if ( isHex(config[name])||isRgb(config[name]) ) {
                         names += name + ',';
                         colors += config[name] + ',';
-                    }
+                    // }
                 }
                 this.variables = names.replace(/\,$/,';')+colors.replace(/\,$/,';');
             }
@@ -135,10 +166,10 @@ var theme = module.exports = {
                 var names = '@name-list:';
                 var colors = '@value-list:';
                 for ( var name in config ) {
-                    if ( isUnit(config[name]) ) {
+                    // if ( isUnit(config[name]) ) {
                         names += name + ',';
                         colors += config[name] + ',';
-                    }
+                    // }
                 }
                 this.variables = names.replace(/\,$/,';')+colors.replace(/\,$/,';');
             }

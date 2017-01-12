@@ -9,7 +9,7 @@ if ( is.platform.browser() ) {
     window.theme = theme;
     window.Source = require('../lib/Source.js');
 }
-
+// generate extended css file of full theme
 theme
     .full({ // invalid fields - ignore
         'brand': {
@@ -31,13 +31,6 @@ theme
     .then(function ( sourceString ) {
         fs.writeFileSync( './test/fullTheme.css', sourceString);
     });
-
-
-
-
-
-
-
 // generate extended css file from color config for backgrounds
 theme
     .bgColors({'brand': '#FF4136', 'common': '#2ECC40', 'highlight': '#0074D9'}, {compress: false})
